@@ -16,7 +16,7 @@ SECRET_KEY = "django-insecure-uz-aldk^wlik*s=k%ii%c1y4p6fr5qt)=(i@oe044i35x17*cb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS")
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
 
     # Local Apps
-    "users"
+    "users",
+    "promocode"
 ]
 
 
